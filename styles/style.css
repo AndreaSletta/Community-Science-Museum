@@ -56,10 +56,19 @@ a {
 }
 
 #logo {
-	width: 60%;
 	height: 150px;
 	float: left;
 	z-index: 1;
+	overflow: hidden;
+	display: flex;
+	justify-content: left;
+	padding: 0;
+	margin: 0;
+}
+
+#logo img {
+	object-fit: contain;
+	height: 100%;
 }
 
 #hamburger {
@@ -78,7 +87,7 @@ a {
 	justify-content: space-between;
 	cursor: pointer;
 	height: 40px;
-	width: 40px;
+	width: 50px;
 	margin: 0;
 	padding: 0;
 	right: 30px;
@@ -113,6 +122,7 @@ nav {
 	width: 100vw;
 	left: 101vw;
 	top: 0;
+	font-size: 40px;
 }
 nav ul {
 	margin: 0;
@@ -130,9 +140,9 @@ nav ul li {
 	width: 100%;
 }
 
-li a {
+nav ul li a {
 	text-decoration: none;
-	font-size: 40px;
+	font-size: 50px;
 	font-family: rooney-web, serif;
 	color: white;
 }
@@ -213,7 +223,8 @@ li a {
 }
 
 #mediaicons {
-	width: 80%;
+	width: 70%;
+	height: 115px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -247,7 +258,7 @@ li a {
 	font-size: 40px;
 	border-radius: 100px;
 	border: 10px solid #8b8989;
-	box-shadow: 0px 3px 6px rgb(83, 83, 83);
+	color: #8b8989;
 }
 
 #footerline {
@@ -257,7 +268,7 @@ li a {
 	width: 90%;
 	margin-left: 5%;
 	border-radius: 100px;
-	box-shadow: 0px 3px 6px rgb(184, 184, 184);
+	box-shadow: 0px 3px 6px rgb(83, 83, 83);
 }
 
 #footerp {
@@ -277,7 +288,7 @@ li a {
 	width: 7px;
 	height: auto;
 	border-radius: 100px;
-	box-shadow: 0px 3px 6px rgb(184, 184, 184);
+	box-shadow: 0px 3px 6px rgb(83, 83, 83);
 }
 
 /*  INDEX */
@@ -310,6 +321,7 @@ li a {
 
 #indexintro p {
 	font-size: 50px;
+	background-color: white;
 }
 
 .greenbutton {
@@ -331,12 +343,6 @@ li a {
 	z-index: -1;
 }
 
-.image {
-	position: relative;
-	width: 100%;
-	overflow: hidden;
-}
-
 .image img {
 	z-index: -1;
 	height: auto;
@@ -351,4 +357,9 @@ li a {
 	z-index: 1;
 	color: white;
 	padding: 0 40px 40px 0;
+}
+
+/* EXIBITIONS */
+
+#pagetite {
 }
