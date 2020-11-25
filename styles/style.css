@@ -361,5 +361,32 @@ nav ul li a {
 
 /* EXIBITIONS */
 
-#pagetite {
+.pagetite {
+	position: relative;
+	margin-top: 250px;
+	margin-bottom: 150px;
+	padding: 0px 40px 0px 10vw;
+	border-radius: 0 100px 100px 0;
+	background-color: #a5d35e;
+	display: inline-block;
+}
+
+.pagetite h2 {
+	color: white;
+	display: inline-block;
+}
+
+.divs {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+#exibitionnews {
+	display: flex;
+	flex-direction: column;
+}
+
+.greentitle {
+	color: #a5d35e;
 }
