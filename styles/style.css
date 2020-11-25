@@ -40,6 +40,27 @@ a {
 	font-family: rooney-web, serif;
 }
 
+/* COMMON STYLES  */
+
+.image {
+	height: 500px;
+	overflow: hidden;
+}
+
+.image img {
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.divs {
+	width: 80vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-bottom: 150px;
+}
+
 /* NAVIGATION */
 #nav {
 	width: 100%;
@@ -195,8 +216,11 @@ nav ul li a {
 	padding-top: 50px;
 }
 
-#footerlogo {
+#footerlogo img {
+	z-index: -1;
+	height: auto;
 	width: 100%;
+	object-fit: cover;
 }
 
 .footertext1 {
@@ -343,7 +367,7 @@ nav ul li a {
 	z-index: -1;
 }
 
-.image img {
+#dinophone img {
 	z-index: -1;
 	height: auto;
 	width: 100%;
@@ -374,12 +398,6 @@ nav ul li a {
 .pagetite h2 {
 	color: white;
 	display: inline-block;
-}
-
-.divs {
-	width: 80vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
 }
 
 #exibitionnews {
