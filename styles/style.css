@@ -87,6 +87,7 @@ a {
 
 .pagetite {
 	width: auto;
+	white-space: nowrap;
 	position: relative;
 	margin-top: 110px;
 	margin-bottom: 40px;
