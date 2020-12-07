@@ -409,10 +409,17 @@ footer {
 
 /*  INDEX */
 
+main {
+	margin: 0;
+	padding: 0;
+}
+
 #index {
 	height: 100vh;
 	width: 100vw;
 	display: block;
+	margin: 0;
+	padding: 0;
 }
 #indexintro {
 	position: absolute;
@@ -441,22 +448,26 @@ footer {
 }
 
 #indexbottom {
-	position: relative;
 	bottom: 0;
 	margin: 0;
 	padding: 0;
 	width: 100%;
 	z-index: -1;
 	position: absolute;
-	display: block;
-	max-height: 60vh;
+}
+
+#dinophone {
+	height: 300px;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
 }
 
 #dinophone img {
 	z-index: -1;
 	height: auto;
 	width: 100%;
-	object-fit: cover;
+	object-fit: scale-down;
 }
 #dinodesktop {
 	display: none;
@@ -465,8 +476,7 @@ footer {
 #openinghours {
 	background-color: #a5d35e;
 	position: absolute;
-	bottom: 0;
-	margin-bottom: 10vw;
+	bottom: 10vw;
 	margin-left: 51vw;
 	z-index: 1;
 	color: white;
@@ -622,6 +632,8 @@ footer {
 	box-shadow: 0px 3px 6px rgb(184, 184, 184);
 	align-items: top;
 }
+
+/*  LANDSCAPE */
 
 @media only screen and (max-height: 550px) {
 	/*  INDEX */
