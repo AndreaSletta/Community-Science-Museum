@@ -10,7 +10,7 @@
     <body>
         <header>
             <div id="nav">
-                <a href="index.html"></a>
+                <a href="index.html">
                 <div id="logo">
                 <div id=> <img src="icons/logo.svg" alt="The museums logo"></div>
                 </div>
@@ -26,7 +26,7 @@
                      </label>
                      <nav>
                          <ul>
-                             <li><a href="index.html">HOME</a></li>
+                             <li><a id="underline" href="index.html">HOME</a></li>
                              <li><a href="exibitions.html">EXIBITIONS</a></li>
                              <li><a href="visit.html">VISIT US</a></li>
                              <li><a href="contact.html">CONTACT US</a></li>
@@ -38,13 +38,13 @@
       
         </header>
         <main> 
-            <div id="index">
+            <div id="index" class="safari_only">
             <div id="indexintro">
                 <h1>EXPLORE TOGETHER</h1>
                 <p>Interact and play around to see science come to life.</p>
-                <div class="greenbutton">
-                    <a href="exibitions.html">OUR EXIBITIONS</a>
-                </div>
+                <a href="exibitions.html"> <div class="greenbutton">
+                  <p> OUR EXIBITIONS</p>
+                </div></a>
             </div>   
             <div id="indexbottom">
                 <div id="openinghours">
@@ -74,8 +74,21 @@
                     <p> Work with us</p>
                     <p> Events</p>
                 </div>
+                <div class="desktoponly"  id="footersocialemaildesktop">
+                    <div id="mediaicons">
+                        <img src="icons/instagram.svg" alt="Instagram icon">
+                        <img src="icons/facebook.svg" alt="Facebook icon">
+                        <img src="icons/twitter.svg" alt="Twitter icon">
+                    </div>
+                    <div id="footeremail">
+                       <form action="mailto:communityscience@gamil.com" method="post">
+                       <input id="email" type="email" placeholder="Email address" name="Email subscription" required>
+                        <input type="submit" value="Subscribe" id="emaillabel"> </input>
+                    </form> 
+                    </div>
+                </div>
             </div>
-            <div id="footersocialemail">
+            <div class="phoneonly" id="footersocialemail">
                 <div id="mediaicons">
                     <img src="icons/instagram.svg" alt="Instagram icon">
                     <img src="icons/facebook.svg" alt="Facebook icon">
@@ -89,8 +102,10 @@
                 </div>
             </div>
             <div id="footerline"></div>
-            <p id="footerp">Community science museum 2020 © </p>
+            <p class="phoneonly" id="footerp">Community science museum 2020 © </p>
             <div id="bottomrowfooter">
+                <p class="desktoponly" id="footerp">Community science museum 2020 © </p>
+                <span class="desktoponly"></span>
                 <p>Privacy policy</p>
                 <span></span>
                 <p>Support</p>

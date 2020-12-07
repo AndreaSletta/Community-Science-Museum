@@ -1,18 +1,18 @@
 <html>
     <head>
         <title>Community science museum</title>
+        <meta name="description" content="The Community science museums official website."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="styles/style.css">
        <link rel="stylesheet" href="https://use.typekit.net/yun7wpn.css">
-       <meta name="description" content="Contact the Community science museums."/>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script>src="styles/js.js"</script>
     </head>
     <body>
         <header>
             <div id="nav">
-                <a href="index.html"></a>
+                <a href="index.html">
                 <div id="logo">
-                <div > <img src="icons/logo.svg" alt="The museums logo"></div>
+                <div id=> <img src="icons/logo.svg" alt="The museums logo"></div>
                 </div>
             </a>
                 <div id="hamburger">
@@ -26,10 +26,10 @@
                      </label>
                      <nav>
                          <ul>
-                             <li><a href="index.html">HOME</a></li>
+                             <li><a  href="index.html">HOME</a></li>
                              <li><a href="exibitions.html">EXIBITIONS</a></li>
                              <li><a href="visit.html">VISIT US</a></li>
-                             <li><a href="contact.html">CONTACT US</a></li>
+                             <li><a id="underline" href="contact.html">CONTACT US</a></li>
                              <li><a href="getinvolved.html">GET INVOLVED</a></li>
                          </ul>
                      </nav>
@@ -41,6 +41,8 @@
            <div class="pagetite">
                <h2>CONTACT US:</h2>
            </div>
+        <div id="contactcontainor">
+          <div  id="contactcontainor1">
            <div class="greentextbox">
             <p>Want to celebrate your birthday with the dinosaurs? Or maybe get a private tour of our museum? Whatever the question is, we can answer You!</p>
         </div>
@@ -48,15 +50,20 @@
             <form action="mailto:communityscience@gamil.com" method="post">
                 <input id="name" type="text" placeholder="Albert Einstein…" name="Senders name" required>
                 <input id="contactemail" type="email" placeholder="Einstein@gmail.com" name="Senders email" required>
-                <input id="text" type="text" placeholder="“If we knew what it was we were doing, it would not be called research, would it?”… " name="Senders message" required>
-                 <input type="submit" value="SEND" id="contactsend"> </input>
+                <textarea id="text" placeholder="“If we knew what it was we were doing, it would not be called research, would it?”… " name="Senders message" required></textarea>
+                <input type="submit" value="SEND" id="contactsend"> </input>
              </form> 
         </div>
+    </div>
+    <div  id="contactcontainor2">
+        <img src="images/diondesktop.jpg" alt="Dinosaur skeleton with a green sircle background">
+    </div>
+    </div>
         </main>
         <footer>
             <div id="footer">
                 <div id="footerlogotext">
-                <div id="footerlogo"><img src="icons/whitelogo.svg" alt="The museums logo in white"></div>
+                <div id="footerlogo" ><img src="icons/whitelogo.svg" alt="The museums logo in white"></div>
                 <div class="footertext1">
                     <h3>Reach us:</h3>
                     <p>+47 47 77 60 20</p>
@@ -69,8 +76,21 @@
                     <p> Work with us</p>
                     <p> Events</p>
                 </div>
+                <div class="desktoponly"  id="footersocialemaildesktop">
+                    <div id="mediaicons">
+                        <img src="icons/instagram.svg" alt="Instagram icon">
+                        <img src="icons/facebook.svg" alt="Facebook icon">
+                        <img src="icons/twitter.svg" alt="Twitter icon">
+                    </div>
+                    <div id="footeremail">
+                       <form action="mailto:communityscience@gamil.com" method="post">
+                       <input id="email" type="email" placeholder="Email address" name="Email subscription" required>
+                        <input type="submit" value="Subscribe" id="emaillabel"> </input>
+                    </form> 
+                    </div>
+                </div>
             </div>
-            <div id="footersocialemail">
+            <div class="phoneonly" id="footersocialemail">
                 <div id="mediaicons">
                     <img src="icons/instagram.svg" alt="Instagram icon">
                     <img src="icons/facebook.svg" alt="Facebook icon">
@@ -84,8 +104,10 @@
                 </div>
             </div>
             <div id="footerline"></div>
-            <p id="footerp">Community science museum 2020 © </p>
+            <p class="phoneonly" id="footerp">Community science museum 2020 © </p>
             <div id="bottomrowfooter">
+                <p class="desktoponly" id="footerp">Community science museum 2020 © </p>
+                <span class="desktoponly"></span>
                 <p>Privacy policy</p>
                 <span></span>
                 <p>Support</p>

@@ -1,18 +1,18 @@
 <html>
     <head>
         <title>Community science museum</title>
+        <meta name="description" content="The Community science museums official website."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="styles/style.css">
        <link rel="stylesheet" href="https://use.typekit.net/yun7wpn.css">
-       <meta name="description" content="The Community science museums opening hours and usefull information."/>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script>src="styles/js.js"</script>
     </head>
     <body>
         <header>
             <div id="nav">
-                <a href="index.html"></a>
+                <a href="index.html">
                 <div id="logo">
-                <div > <img src="icons/logo.svg" alt="The museums logo"></div>
+                <div id=> <img src="icons/logo.svg" alt="The museums logo"></div>
                 </div>
             </a>
                 <div id="hamburger">
@@ -26,22 +26,28 @@
                      </label>
                      <nav>
                          <ul>
-                             <li><a href="index.html">HOME</a></li>
+                             <li><a  href="index.html">HOME</a></li>
                              <li><a href="exibitions.html">EXIBITIONS</a></li>
-                             <li><a href="visit.html">VISIT US</a></li>
+                             <li><a id="underline" href="visit.html">VISIT US</a></li>
                              <li><a href="contact.html">CONTACT US</a></li>
                              <li><a href="getinvolved.html">GET INVOLVED</a></li>
                          </ul>
                      </nav>
                 </div>
             </div>
+      
         </header>
         <main> 
            <div class="pagetite">
                <h2>VISIT US:</h2>
            </div>
-           <div id="topofpage"  class="divs">
-            <div class="image"> <img src="images/kidatmuseum.jpg" alt="A kid standing with his back to the camera looking at the muesums exibition"></div>
+           <div id="visitcontainer">
+           <div id="topofpage"  >
+            <img src="images/kidatmuseum.jpg" alt="A kid standing with his back to the camera looking at the muesums exibition">
+        </div>
+          
+           <div id="visitcontainer1">
+            <div>
             <h2 class="greentitle">OPENING HOURS</h2>
             <div>
                 <p>Mon: Closed</p>
@@ -49,13 +55,13 @@
                 <p> Sun: 10:00 – 13:00</p>
              </div>
             </div>
-            <div  class="divs">
+            <div >
                 <h2 class="greentitle">ADDRESS</h2>
                 <div>
                     <p>Storgata 28, 4307 Sandnes</p>
                  </div>
                 </div>
-                <div  class="divs">
+                <div >
                     <h2 class="greentitle">PRICES</h2>
                     <div>
                         <p>The entrance is free for all.</p>
@@ -63,35 +69,41 @@
                         <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
                      </div>
                     </div>
-                    <div  class="divs">
+                </div>
+                    <div id="visitcontainer2">
+                    <div >
                         <h2 class="greentitle">FOOD AND DRINKS</h2>
                         <div>
                             <p>Open 10am - 16pm</p>
                             <p>There is a café attached to the museum where you can get light lunches, soft drinks, coffee, snacks and more.</p>
                          </div>
                         </div>
-                        <div  class="divs">
+                        <div>
                             <h2 class="greentitle">SHOP</h2>
                             <div>
                                 <p>Our shop offers a range of memorabilia from the museum as well as great gifts and activity packs that allow you to continue to explore science even after you’ve left the museum.</p>
                              </div>
                             </div>
-                            <div class="divs">
+                            <div>
                                 <h2 class="greentitle">ACCESSIBILITY</h2>
                                 <div>
                                 <p>The museum has wheelchair accessibility ramps. It also has audio guides and braille display signs for the visually impaired.</p>                                 </div>
                                 </div>
+                            </div>
+                            </div>
+                                
                                 <a href="#topofpage">
                                     <div class="totop">
                                         <img src="icons/arrow.svg" alt="Green arrow that will take you to the top of the page">
                                      </div>
                                  </a>
+                                 
            
         </main>
         <footer>
             <div id="footer">
                 <div id="footerlogotext">
-                <div id="footerlogo"><img src="icons/whitelogo.svg" alt="The museums logo in white"></div>
+                <div id="footerlogo" ><img src="icons/whitelogo.svg" alt="The museums logo in white"></div>
                 <div class="footertext1">
                     <h3>Reach us:</h3>
                     <p>+47 47 77 60 20</p>
@@ -104,8 +116,21 @@
                     <p> Work with us</p>
                     <p> Events</p>
                 </div>
+                <div class="desktoponly"  id="footersocialemaildesktop">
+                    <div id="mediaicons">
+                        <img src="icons/instagram.svg" alt="Instagram icon">
+                        <img src="icons/facebook.svg" alt="Facebook icon">
+                        <img src="icons/twitter.svg" alt="Twitter icon">
+                    </div>
+                    <div id="footeremail">
+                       <form action="mailto:communityscience@gamil.com" method="post">
+                       <input id="email" type="email" placeholder="Email address" name="Email subscription" required>
+                        <input type="submit" value="Subscribe" id="emaillabel"> </input>
+                    </form> 
+                    </div>
+                </div>
             </div>
-            <div id="footersocialemail">
+            <div class="phoneonly" id="footersocialemail">
                 <div id="mediaicons">
                     <img src="icons/instagram.svg" alt="Instagram icon">
                     <img src="icons/facebook.svg" alt="Facebook icon">
@@ -119,8 +144,10 @@
                 </div>
             </div>
             <div id="footerline"></div>
-            <p id="footerp">Community science museum 2020 © </p>
+            <p class="phoneonly" id="footerp">Community science museum 2020 © </p>
             <div id="bottomrowfooter">
+                <p class="desktoponly" id="footerp">Community science museum 2020 © </p>
+                <span class="desktoponly"></span>
                 <p>Privacy policy</p>
                 <span></span>
                 <p>Support</p>

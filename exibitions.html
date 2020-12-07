@@ -1,18 +1,18 @@
 <html>
     <head>
         <title>Community science museum</title>
+        <meta name="description" content="The Community science museums official website."/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="stylesheet" href="styles/style.css">
        <link rel="stylesheet" href="https://use.typekit.net/yun7wpn.css">
-       <meta name="description" content="Check out our exibitions at the Community science museums."/>
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <script>src="styles/js.js"</script>
     </head>
     <body>
         <header>
             <div id="nav">
-                <a href="index.html"></a>
+                <a href="index.html">
                 <div id="logo">
-                <div > <img src="icons/logo.svg" alt="The museums logo"></div>
+                <div id=> <img src="icons/logo.svg" alt="The museums logo"></div>
                 </div>
             </a>
                 <div id="hamburger">
@@ -26,8 +26,8 @@
                      </label>
                      <nav>
                          <ul>
-                             <li><a href="index.html">HOME</a></li>
-                             <li><a href="exibitions.html">EXIBITIONS</a></li>
+                             <li><a  href="index.html">HOME</a></li>
+                             <li><a id="underline" href="exibitions.html">EXIBITIONS</a></li>
                              <li><a href="visit.html">VISIT US</a></li>
                              <li><a href="contact.html">CONTACT US</a></li>
                              <li><a href="getinvolved.html">GET INVOLVED</a></li>
@@ -35,15 +35,14 @@
                      </nav>
                 </div>
             </div>
-      
         </header>
         <main> 
            <div class="pagetite">
                <h2>OUR EXIBITIONS:</h2>
            </div>
            <div id="exibitionnews" class="divs">
-               <div class="image"> <img src="images/kidatmuseum.jpg" alt="A kid standing with his back to the camera looking at the muesums exibition"></div>
-               <div>
+               <div id="exibitionimage" > <img src="images/kidatmuseum.jpg" alt="A kid standing with his back to the camera looking at the muesums exibition"></div>
+               <div id="exibitiontext" >
                    <h2 class="greentitle">Special Events & Exhibitions News</h2>
                    <h2>Visiting Professor of Aeronautics</h2>
                    <p>It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
@@ -53,6 +52,7 @@
                    <p>On loan from the NEMO Science Museum in Amsterdam, the Energetica exhibition is coming to the Community Science Museum. It’s a series of installations that allow visitors to experience the power of the elements as we harness them. From solar energy powering lighting, to ‘Wind Island’ that shows how turbines are able to use and control wind to create power. </p> 
             </div>
            </div>
+           <div id="desktopexibitions">
            <div id="ecology" class="divs">
                 <h2 class="greentitle">Ecology</h2>
                 <div class="image"> <img src="images/polarbear.jpg" alt="A polarbear laying on a iceberg"></div>
@@ -98,6 +98,7 @@
                 <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
             </div>
          </div>
+        </div>
            <a href="#exibitionnews">
                <div class="totop">
                    <img src="icons/arrow.svg" alt="Green arrow that will take you to the top of the page">
@@ -120,8 +121,21 @@
                     <p> Work with us</p>
                     <p> Events</p>
                 </div>
+                <div class="desktoponly"  id="footersocialemaildesktop">
+                    <div id="mediaicons">
+                        <img src="icons/instagram.svg" alt="Instagram icon">
+                        <img src="icons/facebook.svg" alt="Facebook icon">
+                        <img src="icons/twitter.svg" alt="Twitter icon">
+                    </div>
+                    <div id="footeremail">
+                       <form action="mailto:communityscience@gamil.com" method="post">
+                       <input id="email" type="email" placeholder="Email address" name="Email subscription" required>
+                        <input type="submit" value="Subscribe" id="emaillabel"> </input>
+                    </form> 
+                    </div>
+                </div>
             </div>
-            <div id="footersocialemail">
+            <div class="phoneonly" id="footersocialemail">
                 <div id="mediaicons">
                     <img src="icons/instagram.svg" alt="Instagram icon">
                     <img src="icons/facebook.svg" alt="Facebook icon">
@@ -135,8 +149,10 @@
                 </div>
             </div>
             <div id="footerline"></div>
-            <p id="footerp">Community science museum 2020 © </p>
+            <p class="phoneonly" id="footerp">Community science museum 2020 © </p>
             <div id="bottomrowfooter">
+                <p class="desktoponly" id="footerp">Community science museum 2020 © </p>
+                <span class="desktoponly"></span>
                 <p>Privacy policy</p>
                 <span></span>
                 <p>Support</p>
