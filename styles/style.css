@@ -346,14 +346,19 @@ footer {
 
 #footeremail {
 	width: 100%;
+	height: 50px;
 	padding-top: 25px;
 }
 
 #email {
+	-webkit-appearance: none;
+	right: 0;
+	margin-right: 20vw;
+	position: absolute;
 	z-index: 1;
 	text-align: left;
 	background-color: white;
-	width: 100%;
+	width: 60vw;
 	padding: 5px 10px;
 	font-size: 16px;
 	border-radius: 100px;
@@ -362,8 +367,10 @@ footer {
 }
 
 #emaillabel {
-	right: 10vw;
+	-webkit-appearance: none;
 	position: absolute;
+	right: 0;
+	margin-right: 20vw;
 	z-index: 2;
 	text-align: center;
 	background-color: white;
@@ -372,6 +379,7 @@ footer {
 	font-size: 16px;
 	border-radius: 100px;
 	border: 4px solid #8b8989;
+	box-shadow: 0px 3px 6px rgb(83, 83, 83);
 	color: #8b8989;
 }
 
@@ -534,10 +542,12 @@ main {
 
 #contact form {
 	display: flex;
+	-webkit-appearance: none;
 	flex-direction: column;
 }
 #contact form input,
 #contact form textarea {
+	-webkit-appearance: none;
 	box-shadow: 0px 3px 6px rgb(184, 184, 184);
 	background-color: white;
 	border: 4px solid #a5d35e;
@@ -951,19 +961,26 @@ main {
 		width: 300px;
 		padding-top: 25px;
 	}
+	.desktoponly {
+		display: block;
+	}
 
 	#email {
+		position: absolute;
+		right: 0;
+		margin-right: 5vw;
 		padding: 7px 10px;
+		width: 250px;
 		font-size: 12px;
-		height: 35px;
 		border: 2px solid #8b8989;
 	}
 
 	#emaillabel {
-		right: 5vw;
+		position: absolute;
+		right: 0;
+		margin-right: 5vw;
 		width: 100px;
 		padding: 7px;
-		height: 35px;
 		font-size: 12px;
 		border: 2px solid #8b8989;
 	}
@@ -1001,10 +1018,6 @@ main {
 		height: 20px;
 		border-radius: 100px;
 		box-shadow: 0px 3px 6px rgb(83, 83, 83);
-	}
-
-	.desktoponly {
-		display: block;
 	}
 
 	/*  INDEX */
