@@ -2,6 +2,7 @@ html {
 	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
+	height: 100%;
 }
 body {
 	margin: 0;
@@ -10,6 +11,7 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	overflow-x: hidden;
+	height: 100%;
 }
 
 h1,
