@@ -542,7 +542,6 @@ main {
 
 #contact form {
 	display: flex;
-	-webkit-appearance: none;
 	flex-direction: column;
 }
 #contact form input,
