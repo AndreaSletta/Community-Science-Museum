@@ -997,6 +997,10 @@ main {
 
 	/*  INDEX */
 
+	main {
+		min-height: 100%;
+	}
+
 	#indexintro {
 		margin-top: 130px;
 		padding-top: 35px;
