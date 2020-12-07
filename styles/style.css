@@ -1310,16 +1310,17 @@ main {
 
 	/* GET INVOLVED */
 	#topofpagework {
-		top: 80px;
-		position: absolute;
+		z-index: -2;
+		top: -130px;
+		position: relative;
 		padding: 0;
 		height: 300px;
 		overflow: hidden;
-
 		box-shadow: 0px 3px 6px rgb(184, 184, 184);
 	}
 
 	#topofpagework .image img {
+		z-index: -1;
 		position: absolute;
 		top: -20vh;
 		height: auto;
@@ -1334,7 +1335,7 @@ main {
 		display: flex;
 		flex-direction: row;
 		row-gap: 30px;
-		margin-top: 200px;
+		margin-top: -130px;
 	}
 
 	#work div {
