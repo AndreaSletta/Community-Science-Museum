@@ -273,11 +273,14 @@ nav ul li a {
 }
 
 /* FOOTER */
+footer {
+	position: relative;
+	clear: both;
+}
 
 #footer {
 	background-color: #8b8989;
 	width: 100%;
-	overflow: hidden;
 }
 
 #footerlogotext {
@@ -882,7 +885,6 @@ main {
 	#footer {
 		background-color: #8b8989;
 		width: 100%;
-		overflow: hidden;
 	}
 
 	#footerlogotext {
