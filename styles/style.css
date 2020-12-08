@@ -440,6 +440,7 @@ main {
 	display: block;
 	margin: 0;
 	padding: 0;
+	padding-bottom: -75px;
 }
 #indexintro {
 	position: absolute;
@@ -1048,6 +1049,9 @@ main {
 	}
 
 	/*  INDEX */
+	#index {
+		padding-bottom: 0;
+	}
 
 	#indexintro {
 		margin-top: 130px;
