@@ -277,7 +277,6 @@ nav ul li a {
 /* FOOTER */
 footer {
 	position: relative;
-	clear: both;
 	background-color: #707070;
 	width: 100%;
 }
@@ -432,10 +431,11 @@ footer {
 main {
 	margin: 0;
 	padding: 0;
-	min-height: 100vh;
+	min-height: 100%;
 }
 
 #index {
+	height: 100vh;
 	width: 100vw;
 	display: block;
 	margin: 0;
@@ -481,6 +481,8 @@ main {
 	display: flex;
 	align-items: flex-end;
 	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 #dinophone img {
