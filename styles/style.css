@@ -494,8 +494,8 @@ footer {
 #openinghours {
 	background-color: #35852e;
 	position: absolute;
-	bottom: 10vw;
-	margin-left: 51vw;
+	right: 0;
+	bottom: 0;
 	z-index: 1;
 	color: white;
 	padding: 0 0 0 0;
