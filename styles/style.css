@@ -657,8 +657,7 @@ footer {
 }
 
 @media screen and (max-width: 499px) {
-	_::-webkit-full-page-media,
-	_:future,
+	::-webkit-full-page-media,
 	:root .safari_only {
 		padding-bottom: 65px; //resize
 	}
