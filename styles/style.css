@@ -432,10 +432,11 @@ footer {
 main {
 	margin: 0;
 	padding: 0;
+	height: 100vh;
 }
 
 #index {
-	height: 100vh;
+	height: 100%;
 	width: 100vw;
 	display: block;
 	margin: 0;
