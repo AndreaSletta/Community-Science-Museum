@@ -430,6 +430,7 @@ footer {
 
 #index {
 	min-height: 100vh;
+
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -466,40 +467,38 @@ footer {
 	bottom: 0;
 	margin: 0;
 	padding: 0;
-	width: 100vw;
+	width: 100%;
 	z-index: -1;
 	overflow: hidden;
-	display: flex;
-	justify-content: baseline;
-	align-items: flex-end;
-}
-
-#openinghours {
-	background-color: #35852e;
-	float: right;
-	z-index: 1;
-	color: white;
-	padding: 0 0 0 0;
-	position: absolute;
-	bottom: 0;
-	right: 0;
 }
 
 #dinophone {
-	height: auto;
-	width: 100%;
+	height: 100%;
 	display: flex;
-	justify-content: baseline;
+	align-items: flex-end;
+	width: 100%;
+	position: relative;
+	bottom: 0;
 }
 
 #dinophone img {
 	z-index: -1;
 	height: auto;
 	width: 100%;
-	object-fit: fill;
+	object-fit: scale-down;
 }
 #dinodesktop {
 	display: none;
+}
+
+#openinghours {
+	background-color: #35852e;
+	position: absolute;
+	bottom: 10vw;
+	margin-left: 51vw;
+	z-index: 1;
+	color: white;
+	padding: 0 0 0 0;
 }
 
 #openinghours h2 {
