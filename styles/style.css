@@ -432,13 +432,14 @@ footer {
 #index {
 	height: 100vh;
 	width: 100vw;
-	display: block;
+	display: flex;
 	margin: 0;
 	padding: 0;
+	justify-content: space-between;
+	flex-direction: column;
 }
 #indexintro {
-	position: absolute;
-	top: 0;
+	position: relative;
 	width: 80vw;
 	padding: 0;
 	margin: 0 10%;
@@ -467,7 +468,7 @@ footer {
 	padding: 0;
 	width: 100%;
 	z-index: -1;
-	position: absolute;
+	position: relative;
 }
 
 #dinophone {
