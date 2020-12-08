@@ -428,9 +428,6 @@ footer {
 
 /*  INDEX */
 
-main {
-}
-
 #index {
 	min-height: 100vh;
 
@@ -657,6 +654,14 @@ main {
 	justify-content: center;
 	box-shadow: 0px 3px 6px rgb(184, 184, 184);
 	align-items: top;
+}
+
+@media screen and (max-width: 499px) {
+	_::-webkit-full-page-media,
+	_:future,
+	:root .safari_only {
+		padding-bottom: 65px; //resize
+	}
 }
 
 /*  LANDSCAPE */
