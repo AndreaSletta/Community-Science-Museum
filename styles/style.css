@@ -430,7 +430,6 @@ footer {
 
 #index {
 	min-height: 100vh;
-
 	width: 100vw;
 	display: flex;
 	flex-direction: column;
@@ -467,38 +466,40 @@ footer {
 	bottom: 0;
 	margin: 0;
 	padding: 0;
-	width: 100%;
+	width: 100vw;
 	z-index: -1;
 	overflow: hidden;
+	display: flex;
+	justify-content: baseline;
+	align-items: flex-end;
+}
+
+#openinghours {
+	background-color: #35852e;
+	float: right;
+	z-index: 1;
+	color: white;
+	padding: 0 0 0 0;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 }
 
 #dinophone {
-	height: 100%;
-	display: flex;
-	align-items: flex-end;
+	height: auto;
 	width: 100%;
-	position: relative;
-	bottom: 0;
+	display: flex;
+	justify-content: baseline;
 }
 
 #dinophone img {
 	z-index: -1;
 	height: auto;
 	width: 100%;
-	object-fit: scale-down;
+	object-fit: fill;
 }
 #dinodesktop {
 	display: none;
-}
-
-#openinghours {
-	background-color: #35852e;
-	position: absolute;
-	bottom: 10vw;
-	margin-left: 51vw;
-	z-index: 1;
-	color: white;
-	padding: 0 0 0 0;
 }
 
 #openinghours h2 {
@@ -654,13 +655,6 @@ footer {
 	justify-content: center;
 	box-shadow: 0px 3px 6px rgb(184, 184, 184);
 	align-items: top;
-}
-
-@media screen and (max-width: 499px) {
-	::-webkit-full-page-media,
-	:root .safari_only {
-		padding-bottom: 65px; //resize
-	}
 }
 
 /*  LANDSCAPE */
