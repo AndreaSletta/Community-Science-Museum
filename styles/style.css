@@ -919,6 +919,8 @@ footer {
 	.underline {
 		text-decoration: underline #35852e;
 		text-underline-offset: 5px;
+		-webkit-text-decoration-line: underline;
+		-webkit-text-decoration-color: #35852e;
 	}
 
 	/* FOOTER */
