@@ -152,6 +152,7 @@ a {
 	overflow: hidden;
 	display: flex;
 	justify-content: left;
+	align-items: flex-start;
 	padding: 0 0 0 10px;
 	margin: 0;
 }
@@ -851,6 +852,12 @@ footer {
 		width: 25vw;
 		margin-left: 5px;
 		cursor: pointer;
+	}
+
+	.logo img {
+		object-fit: cover;
+		height: 100%;
+		width: auto;
 	}
 
 	.logo:hover {
