@@ -931,6 +931,13 @@ footer {
 		height: 70px;
 	}
 
+	.footerlogo img {
+		z-index: -1;
+		height: 100%;
+		width: auto;
+		object-fit: contain;
+	}
+
 	.footer p {
 		font-size: 12px;
 		color: white;
