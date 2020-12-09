@@ -97,11 +97,12 @@ a {
 	box-shadow: 0px 3px 6px rgb(184, 184, 184);
 }
 
-.pagetite h2 {
+.pagetite h1 {
 	color: white;
 	display: inline-block;
 	padding: 0;
 	margin: 0;
+	font-size: 25px;
 }
 
 .greenbutton {
@@ -798,11 +799,12 @@ footer {
 		margin-bottom: 0;
 	}
 
-	.pagetite h2 {
+	.pagetite h1 {
 		color: white;
 		display: inline-block;
 		padding: 0;
 		margin: 0;
+		font-size: 25px;
 	}
 
 	.greenbutton {
