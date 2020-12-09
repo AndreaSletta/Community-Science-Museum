@@ -281,6 +281,7 @@ footer {
 	clear: both;
 	background-color: #707070;
 	width: 100%;
+	z-index: 5;
 }
 
 .footerlogotext {
