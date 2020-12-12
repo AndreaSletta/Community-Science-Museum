@@ -698,6 +698,13 @@ footer {
 /*  TABLET */
 
 @media only screen and (min-width: 500px) and (max-width: 1024px) {
+	.image,
+	.exibitionimage,
+	#topofpage,
+	#topofpagework {
+		height: 400px;
+	}
+
 	/*  INDEX */
 
 	.indexintro {
@@ -1045,7 +1052,7 @@ footer {
 
 	#footerp {
 		text-align: center;
-		margin-bottom: 25px;
+		margin-bottom: auto;
 	}
 
 	.phoneonly {
@@ -1053,7 +1060,6 @@ footer {
 	}
 
 	.bottomrowfooter {
-		margin: 15px 0;
 		width: 50%;
 		margin: auto;
 	}
